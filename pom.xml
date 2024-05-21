@@ -7,10 +7,13 @@
 
     <groupId>com.cubixos</groupId>
     <artifactId>manage-files</artifactId>
-    <version>1.0.0-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version><!-- Update the japicmp reference version -->
+    <!-- Update the japicmp configuration for the new release -->
 
     <url>https://cubixos.github.io/</url>
-    <description>manage-files is a Java library that simplifies working with real-world files. It offers an easy-to-use API for managing and organising files.</description>
+    <description>manage-files is a Java library that simplifies working with real-world files. It offers an easy-to-use
+        API for managing and organising files.
+    </description>
     <inceptionYear>2024</inceptionYear>
     <issueManagement>
         <system>GitHub</system>
@@ -33,6 +36,14 @@
         <name>Cubixos</name>
         <url>https://github.com/cubixos</url>
     </organization>
+
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub Packages</name>
+            <url>https://maven.pkg.github.com/cubixos/manage-files</url>
+        </repository>
+    </distributionManagement>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
