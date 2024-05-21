@@ -8,7 +8,31 @@ updates:
   - package-ecosystem: "maven" # for Java projects using Maven
     directory: "/" # the root directory where your pom.xml is located
     schedule:
-      interval: "daily" # how often to check for updates
+      interval: "weekly" # how often to check for updates
+      day: "sunday"
+      time: "00:00"
+      timezone: US/Pacific
+
+    assignees:
+      - "m-asadullah"
+      - "cubixos"
+    reviewers:
+      - "m-asadullah"
+      - "cubixos"
+    labels:
+      - "mvn"
+      - "dependencies"
+
+    pull-request-branch-name:
+      # Separate sections of the branch name with a hyphen
+      # for example, `dependabot-npm_and_yarn-next_js-acorn-0.0.1`
+      separator: "-"
+
+    commit-message:
+      prefix: "mvn prod"
+      prefix-development: "mvn dev"
+      include: "scope"
+
     # Additional best practices include specifying:
     # - Assignees for the pull requests
     # - Labels for easier identification of Dependabot PRs
