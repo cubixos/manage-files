@@ -33,6 +33,13 @@ updates:
       prefix-development: "mvn dev"
       include: "scope"
 
+    ignore:
+      - dependency-name: "commons-io:commons-io"
+        versions: [ "*" ]
+
+      - dependency-name: "org.slf4j:slf4j-api"
+        versions: [ "*" ]
+
     # Additional best practices include specifying:
     # - Assignees for the pull requests
     # - Labels for easier identification of Dependabot PRs
