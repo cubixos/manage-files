@@ -5,7 +5,14 @@
 
 version: 2
 updates:
-  - package-ecosystem: "" # See documentation for possible values
-    directory: "/" # Location of package manifests
+  - package-ecosystem: "maven" # for Java projects using Maven
+    directory: "/" # the root directory where your pom.xml is located
     schedule:
-      interval: "weekly"
+      interval: "weekly" # how often to check for updates
+    # Additional best practices include specifying:
+    # - Assignees for the pull requests
+    # - Labels for easier identification of Dependabot PRs
+    # - Limit for the number of open pull requests
+    # - Configuration for security updates
+    # - Custom commit message details
+    # - Ignoring certain dependencies or versions
