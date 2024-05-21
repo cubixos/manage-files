@@ -7,7 +7,7 @@
 
     <groupId>com.cubixos</groupId>
     <artifactId>manage-files</artifactId>
-    <version>1.0.0-SNAPSHOT</version><!-- Update the japicmp reference version -->
+    <version>1.0.0</version><!-- Update the japicmp reference version -->
     <!-- Update the japicmp configuration for the new release -->
 
     <url>https://cubixos.github.io/</url>
@@ -36,6 +36,25 @@
         <name>Cubixos</name>
         <url>https://github.com/cubixos</url>
     </organization>
+
+    <profiles>
+        <profile>
+            <id>github</id>
+            <repositories>
+                <repository>
+                    <id>central</id>
+                    <url>https://repo1.maven.org/maven2</url>
+                </repository>
+                <repository>
+                    <id>github</id>
+                    <url>https://maven.pkg.github.com/cubixos/manage-files</url>
+                    <snapshots>
+                        <enabled>true</enabled>
+                    </snapshots>
+                </repository>
+            </repositories>
+        </profile>
+    </profiles>
 
     <distributionManagement>
         <repository>
