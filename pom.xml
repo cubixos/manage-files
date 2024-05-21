@@ -3,15 +3,80 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    <name>manage-files Java Files Manager</name>
 
     <groupId>com.cubixos</groupId>
     <artifactId>manage-files</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0.0-SNAPSHOT</version>
+
+    <url>https://cubixos.github.io/</url>
+    <description>manage-files is a Java library that simplifies working with real-world files. It offers an easy-to-use API for managing and organising files.</description>
+    <inceptionYear>2024</inceptionYear>
+    <issueManagement>
+        <system>GitHub</system>
+        <url>https://github.com/cubixos/manage-files/issues</url>
+    </issueManagement>
+    <licenses>
+        <license>
+            <name>The MIT License</name>
+            <url>https://github.com/cubixos/license</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+    <scm>
+        <url>https://github.com/cubixos/manage-files</url>
+        <connection>scm:git:https://github.com/cubixos/manage-files.git</connection>
+        <!-- <developerConnection>scm:git:git@github.com:cubixos/manage-files.git</developerConnection> -->
+        <tag>HEAD</tag>
+    </scm>
+    <organization>
+        <name>Cubixos</name>
+        <url>https://github.com/cubixos</url>
+    </organization>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-    
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.apache.tika/tika-core -->
+        <dependency>
+            <groupId>org.apache.tika</groupId>
+            <artifactId>tika-core</artifactId>
+            <version>2.9.2</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.15.1</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.slf4j/slf4j-api -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>2.0.10</version>
+        </dependency>
+
+    </dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+        </dependencies>
+    </dependencyManagement>
+
+    <developers>
+        <developer>
+            <id>m-asadullah</id>
+            <name>M. AsadUllah</name>
+            <email>m-asadullah@outlook.com</email>
+            <roles>
+                <role>Lead Developer</role>
+            </roles>
+            <timezone>+8</timezone>
+        </developer>
+    </developers>
+
 </project>
