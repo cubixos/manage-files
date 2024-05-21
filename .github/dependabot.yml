@@ -8,7 +8,7 @@ updates:
   - package-ecosystem: "maven" # for Java projects using Maven
     directory: "/" # the root directory where your pom.xml is located
     schedule:
-      interval: "weekly" # how often to check for updates
+      interval: "daily" # how often to check for updates
     # Additional best practices include specifying:
     # - Assignees for the pull requests
     # - Labels for easier identification of Dependabot PRs
