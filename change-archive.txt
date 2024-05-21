@@ -1,0 +1,7 @@
+manage-files Changelog Archive
+
+Contains change notes for versions 1.0.1 (2024-May-21).
+More recent changes may be found in CHANGES.md.
+
+Release 0.1.1 (2024-May-21)
+ * Initial beta release of manage-files
